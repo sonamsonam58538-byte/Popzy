@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/popzy_background">
+
+    <!-- Dark premium overlay -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#55000000"/>
+
+    <!-- POPZY Logo -->
+    <ImageView
+        android:id="@+id/popzyLogo"
+        android:layout_width="280dp"
+        android:layout_height="180dp"
+        android:layout_gravity="center"
+        android:src="@drawable/propzy_logo"
+        android:scaleType="centerInside"/>
+
+    <!-- Loading text -->
+    <TextView
+        android:id="@+id/loadingText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal|bottom"
+        android:layout_marginBottom="150dp"
+        android:text="LOADING..."
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:letterSpacing="0.15"
+        android:shadowColor="#B000FF"
+        android:shadowDx="0"
+        android:shadowDy="0"
+        android:shadowRadius="12"/>
+
+    <!-- Loading bar -->
+    <ProgressBar
+        android:id="@+id/loadingBar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="230dp"
+        android:layout_height="8dp"
+        android:layout_gravity="center_horizontal|bottom"
+        android:layout_marginBottom="115dp"
+        android:progress="0"
+        android:max="100"
+        android:indeterminate="false"/>
+
+</FrameLayout>

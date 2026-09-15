@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+
+    <corners android:radius="24dp"/>
+
+    <!-- Soft Lavender-Pink Transparent -->
+    <solid android:color="#45A78BFA"/>
+
+    <!-- Light Pink-Lavender Border -->
+    <stroke
+        android:width="1.5dp"
+        android:color="#70D8B4FE"/>
+
+    <padding
+        android:left="10dp"
+        android:top="6dp"
+        android:right="12dp"
+        android:bottom="8dp"/>
+
+</shape>

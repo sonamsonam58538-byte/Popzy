@@ -1,0 +1,28 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <style name="Base.Theme.Popzy"
+        parent="Theme.Material3.DayNight.NoActionBar">
+
+        <!-- Remove Material button tint -->
+        <item name="colorPrimary">#7C3AED</item>
+        <item name="colorOnPrimary">#FFFFFF</item>
+
+        <!-- Button shape -->
+        <item name="shapeAppearanceSmallComponent">
+            @style/PopzyButtonShape
+        </item>
+
+    </style>
+
+    <style name="Theme.Popzy"
+        parent="Base.Theme.Popzy" />
+
+    <style name="PopzyButtonShape"
+        parent="ShapeAppearance.Material3.SmallComponent">
+
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">32dp</item>
+
+    </style>
+
+</resources>

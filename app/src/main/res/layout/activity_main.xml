@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/popzy_background">
+
+    <!-- Soft Light -->
+    <View
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_gravity="top|center_horizontal"
+        android:layout_marginTop="-80dp"
+        android:background="@drawable/light_glow" />
+
+    <!-- Main Content -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:clipToPadding="false"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center_horizontal"
+            android:paddingTop="90dp"
+            android:paddingBottom="30dp">
+
+            <!-- ========================= -->
+            <!-- POPZY LOGO -->
+            <!-- ========================= -->
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <!-- Purple Glow -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="POPZY"
+                    android:textColor="#7C3AED"
+                    android:textSize="38sp"
+                    android:textStyle="bold"
+                    android:letterSpacing="0.10"
+                    android:fontFamily="sans"
+                    android:gravity="center"
+                    android:shadowColor="#C026FF"
+                    android:shadowDx="0"
+                    android:shadowDy="0"
+                    android:shadowRadius="18" />
+
+                <!-- Silver Shine -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="POPZY"
+                    android:textColor="#EDEDED"
+                    android:textSize="38sp"
+                    android:textStyle="bold"
+                    android:letterSpacing="0.10"
+                    android:fontFamily="sans"
+                    android:gravity="center"
+                    android:shadowColor="#FFFFFF"
+                    android:shadowDx="0"
+                    android:shadowDy="0"
+                    android:shadowRadius="7" />
+
+                <!-- Dark Center -->
+                <TextView
+                    android:id="@+id/popzyTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="POPZY"
+                    android:textColor="#2E1065"
+                    android:textSize="36sp"
+                    android:textStyle="bold"
+                    android:letterSpacing="0.10"
+                    android:fontFamily="sans"
+                    android:gravity="center"
+                    android:shadowColor="#FFFFFF"
+                    android:shadowDx="0"
+                    android:shadowDy="0"
+                    android:shadowRadius="3" />
+
+            </FrameLayout>
+
+
+            <!-- ========================= -->
+            <!-- TAGLINE -->
+            <!-- ========================= -->
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="POP • PLAY • WIN"
+                android:textColor="#24113F"
+                android:textSize="11sp"
+                android:textStyle="bold"
+                android:letterSpacing="0.15"
+                android:shadowColor="#FFFFFF"
+                android:shadowDx="0"
+                android:shadowDy="0"
+                android:shadowRadius="3" />
+
+
+            <!-- ========================= -->
+            <!-- SCORE + TIME -->
+            <!-- ========================= -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginTop="45dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <!-- SCORE CARD -->
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="78dp"
+                    android:layout_weight="1"
+                    android:layout_marginEnd="6dp"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:background="@drawable/info_card"
+                    android:elevation="8dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="SCORE"
+                        android:textColor="#3B1B63"
+                        android:textSize="10sp"
+                        android:textStyle="bold"
+                        android:letterSpacing="0.08"
+                        android:shadowColor="#FFFFFF"
+                        android:shadowDx="0"
+                        android:shadowDy="0"
+                        android:shadowRadius="3" />
+
+                    <TextView
+                        android:id="@+id/gameScoreText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0"
+                        android:textColor="#1E0B36"
+                        android:textSize="26sp"
+                        android:textStyle="bold"
+                        android:fontFamily="sans"
+                        android:gravity="center"
+                        android:shadowColor="#FFFFFF"
+                        android:shadowDx="0"
+                        android:shadowDy="0"
+                        android:shadowRadius="4" />
+
+                </LinearLayout>
+
+
+                <!-- TIME CARD -->
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="78dp"
+                    android:layout_weight="1"
+                    android:layout_marginStart="6dp"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:background="@drawable/info_card"
+                    android:elevation="8dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="TIME"
+                        android:textColor="#3B1B63"
+                        android:textSize="10sp"
+                        android:textStyle="bold"
+                        android:letterSpacing="0.08"
+                        android:shadowColor="#FFFFFF"
+                        android:shadowDx="0"
+                        android:shadowDy="0"
+                        android:shadowRadius="3" />
+
+                    <TextView
+                        android:id="@+id/gameTimerText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="30"
+                        android:textColor="#1E0B36"
+                        android:textSize="26sp"
+                        android:textStyle="bold"
+                        android:fontFamily="sans"
+                        android:gravity="center"
+                        android:shadowColor="#FFFFFF"
+                        android:shadowDx="0"
+                        android:shadowDy="0"
+                        android:shadowRadius="4" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+            <!-- ========================= -->
+            <!-- BALLOON -->
+            <!-- ========================= -->
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:text="🎈"
+                android:textSize="70sp"
+                android:shadowColor="#6D28D9"
+                android:shadowDx="3"
+                android:shadowDy="4"
+                android:shadowRadius="10" />
+
+
+            <!-- ========================= -->
+            <!-- START BUTTON -->
+            <!-- ========================= -->
+
+            <Button
+                android:id="@+id/startButton"
+                android:layout_width="220dp"
+                android:layout_height="64dp"
+                android:layout_marginTop="25dp"
+                android:background="@drawable/premium_button"
+                android:backgroundTint="@null"
+                android:elevation="10dp"
+                android:text="🎈  START POPPING"
+                android:textAllCaps="false"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:shadowColor="#000000"
+                android:shadowDx="0"
+                android:shadowDy="2"
+                android:shadowRadius="5" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</FrameLayout>
